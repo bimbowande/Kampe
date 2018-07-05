@@ -1,5 +1,5 @@
 {
-  "name": "my-react-boilerplate",
+  "name": "Kampe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,7 @@
   "jest": {
     "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
   },
-  "author": "",
+  "author": "Oluwagbuyi Abimbola",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
