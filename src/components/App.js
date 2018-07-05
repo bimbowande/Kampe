@@ -4,7 +4,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Welcome to My Starter App</h1>
+        <h1>Welcome to Kampe Sport Group</h1>
       </div>
     )
   }
