@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "dev": "next",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
     "test": "jest ./test"
@@ -39,7 +40,8 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "next": "^6.1.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }
