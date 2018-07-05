@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Bg from './Bg';
 
 class App extends Component {
   render() {
