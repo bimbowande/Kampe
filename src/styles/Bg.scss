@@ -1,5 +1,15 @@
 .bg-section{
     width: inherit;
     height: 100%;
-    background: red;
+    display: flex;
+    background-image: url(../images/sposor.online_dribble_part_1__gif.gif);
+    & .bg-subsection{
+        border-right: 1px solid red;
+    }
+    @for $i from 1 through 5{
+        & .bg-subsection-#{$i}{
+            flex:.8*$i;
+        }
+
+    }
 }

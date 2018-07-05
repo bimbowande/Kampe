@@ -26,8 +26,29 @@ module.exports = {
         }, {
           loader: 'sass-loader'
         }],
-   	  }
-    ]
+       },
+       {
+         test:/\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+         use:[{
+           loader:'file-loader',
+           options:{
+             name:'[name].[ext]',
+             outputPath:'fonts/'
+           }
+         }]
+       },
+       {
+         test:/\.(jpg|png|gif|svg|pdf|ico)$/,
+         use:[
+           {
+            loader:'file-loader',
+            options:{
+              name:'[path][name]-[hash:8].[ext]'
+            },
+           },
+         ],
+       }
+    ],
   },
   plugins: [
     new HtmlWebPackPlugin({
