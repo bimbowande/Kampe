@@ -1,8 +1,7 @@
-# Node
 node_modules/
-
-# Project
-dist/
-
-# Images
-src/images/
+.vscode/
+ionicons-2.0.1/
+memm-api/
+styles/scss/fonts/
+styles/scss/*.css
+styles/scss/*.map

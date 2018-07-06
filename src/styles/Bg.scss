@@ -1,14 +1,45 @@
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    & .content{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        background:transparent;
+        top:0;
+    }
+}
 .bg-section{
     width: inherit;
     height: 100%;
     display: flex;
-    background-image: url(../images/sposor.online_dribble_part_1__gif.gif);
+    background: url(../images/football.jpeg),rgba(96, 149, 235, 0.8);
+    background-blend-mode:luminosity;
+    background-size: cover;
+    background-position: center;
     & .bg-subsection{
-        border-right: 1px solid red;
     }
+    
     @for $i from 1 through 5{
         & .bg-subsection-#{$i}{
-            flex:.8*$i;
+            @if $i<3 {
+                border-left:1px solid transparent; 
+            }
+            
+            flex:.2*$i;
+            background-color: rgba(254,254,254,$i*.07);
+            position: relative;
+            &::before{
+                position: absolute;
+                height: 100%;
+                top:0;left:0;right:0;bottom:0;
+                content:'';
+                width:100%;
+                opacity: .3;
+                background: #0f0e4b;
+            }
         }
 
     }

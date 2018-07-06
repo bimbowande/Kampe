@@ -1,5 +1,5 @@
 {
-  "name": "Kampe",
+  "name": "my-react-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,6 @@
     "test": "test"
   },
   "scripts": {
-    "dev": "next",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
     "test": "jest ./test"
@@ -15,7 +14,7 @@
   "jest": {
     "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
   },
-  "author": "Oluwagbuyi Abimbola",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -28,6 +27,7 @@
     "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^22.4.3",
     "node-sass": "^4.9.0",
@@ -40,8 +40,8 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "next": "^6.1.1",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "webfontloader": "^1.6.28"
   }
 }
