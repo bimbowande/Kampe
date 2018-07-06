@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Nav from './Nav';
 import '../styles/Bg.scss';
 
 class Bg extends Component {
@@ -13,7 +14,7 @@ class Bg extends Component {
                     <div className="bg-subsection bg-subsection-1"></div>
                 </div>
                 <div className="content">
-                
+                    <Nav/>
                 </div>
             </div>
         );
