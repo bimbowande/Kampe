@@ -2,9 +2,13 @@
     display: flex;
     border:1px solid red;
     width: 100%;
-    position: relative;
     height: 20px;
+    box-sizing: border-box;
+    & div{
+        width: 33.3%;
+    }
     & .menu{
-        flex:2;
+        background: red;
+        
     }
 }

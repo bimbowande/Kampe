@@ -3,10 +3,13 @@
     width: 100%;
     height: 100%;
     position: relative;
+   
+    text-align: center;
     & .content{
         position: absolute;
         width:100%;
         height: 100%;
+        text-align: center;
         background:transparent;
         top:0;
     }
@@ -22,15 +25,21 @@
     & .bg-subsection{
     }
     
-    @for $i from 1 through 5{
+    @for $i from 1 through 18{
         & .bg-subsection-#{$i}{
             @if $i<3 {
                 border-left:1px solid transparent; 
             }
-            
-            flex:.2*$i;
-            background-color: rgba(254,254,254,$i*.07);
+            flex:.06*$i;
+            background-color: rgba(4,7,17,$i*.3);
             position: relative;
+            @if $i==10{
+                background-color: rgba(4, 7, 17, 0.513);
+            }
+            @if $i==11{
+                background-color: rgba(4, 7, 17, 0.613);
+
+            }
             &::before{
                 position: absolute;
                 height: 100%;
@@ -47,5 +56,4 @@
 
 //content
 .content{
-    display: flex;
 }
