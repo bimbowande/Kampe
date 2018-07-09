@@ -47,14 +47,14 @@
        margin-left: 20px; 
        background: transparent;
        border:none;
-       font-size: .8rem;
+       font-size: .9rem;
        @extend %fw1;
        padding:7px;
        color:white;
        width:30%;
        
        &:not(:first-child){
-           border:1px solid rgba(255,255,255,.4);
+           border:1px ridge rgba(255,255,255,.4);
        }
     }
 }
@@ -65,9 +65,12 @@
     margin-left:30px;
     & a{
        display:inline-block;
-       width:30%;
+       margin:10px 30px;
+    //    width:30%;
        color:white;
+       padding-bottom: 15px;
        @extend %link-fix;
+       &:nth-child(2){border-bottom: 4px inset rgba(255, 255, 255, 0.261);} 
     }
 }
 
