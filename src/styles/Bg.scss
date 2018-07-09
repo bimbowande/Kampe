@@ -1,0 +1,103 @@
+
+.container{
+    font-family: 'Lato', sans-serif;
+    font-size:14px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    & .content{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        // text-align: center;
+        background:transparent;
+        top:0;
+    }
+}
+.bg-section{
+    width: inherit;
+    height: 100%;
+    display: flex;
+    background: url(../images/football.jpeg),rgba(96, 149, 235, 0.8);
+    background-blend-mode:luminosity;
+    background-size: cover;
+    background-position: center;
+    & .bg-subsection{
+    }
+    
+    @for $i from 1 through 18{
+        & .bg-subsection-#{$i}{
+            @if($i<3){
+                &:first-child{
+                    background-color: rgba(4, 7, 17, 0.713);
+                }
+            }
+            @if $i<3 {
+                border-left:1px solid transparent; 
+            }
+            flex:.1*$i;
+            background-color: rgba(4,7,17,$i*.3);
+            position: relative;
+            @if $i==8{
+                background-color: rgba(4, 7, 17, 0.513);
+            }
+            @if $i==9{
+                background-color: rgba(4, 7, 17, 0.613);
+
+            }
+            &::before{
+                position: absolute;
+                height: 100%;
+                top:0;left:0;right:0;bottom:0;
+                content:'';
+                width:100%;
+                opacity: .3;
+                background: #0f0e4b;
+            }
+        }
+
+    }
+}
+
+//content
+.content{
+}
+
+//introductory text
+.intro-text{
+    width:72%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top:150px; 
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    & h2{
+       margin-left:80px;
+        font-size:3.7rem;
+        color:rgba(255,255,255,.9);
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+    & p{
+        &.tagline-bottom{
+            margin-top: 10px;
+        }
+        margin-left:80px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color:white;
+        font-size:1.2rem;
+        font-weight: 100;
+    }
+    & .sponsor-btn{
+        font-family: 'Open Sans Condensed', sans-serif;
+        margin-left:80px;
+        margin-top: 50px;
+        padding:10px;
+        font-size: .7rem;
+        color: white;
+        width:180px;
+        cursor: pointer;
+        border:none;
+        background-color:rgb(208, 96, 55); 
+    }
+}
