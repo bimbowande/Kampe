@@ -88,4 +88,16 @@
         font-size:1.2rem;
         font-weight: 100;
     }
+    & .sponsor-btn{
+        font-family: 'Open Sans Condensed', sans-serif;
+        margin-left:80px;
+        margin-top: 50px;
+        padding:10px;
+        font-size: .7rem;
+        color: white;
+        width:180px;
+        cursor: pointer;
+        border:none;
+        background-color:rgb(208, 96, 55); 
+    }
 }

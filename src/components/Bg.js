@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from './Nav';
 import IntroText from './IntroText';
 import Taglinetext from './Taglinetext';
+import Button from './Button';
 import '../styles/Bg.scss';
 
 class Bg extends Component {
@@ -25,6 +26,7 @@ class Bg extends Component {
                         <IntroText text="WITH LEADING CLUBS"/>
                         <Taglinetext className="tagline-bottom" text="Exclusive Connections between right sponsors"/>
                         <Taglinetext text="and the right Clubs through private auctions"/>
+                        <Button name="BECOME AN AGENT" className="sponsor-btn"/>
                     </div>
                 </div>
             </div>
