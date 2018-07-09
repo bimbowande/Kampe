@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
+import IntroText from './IntroText';
+import Taglinetext from './Taglinetext';
 import '../styles/Bg.scss';
 
 class Bg extends Component {
@@ -17,6 +19,13 @@ class Bg extends Component {
                 </div>
                 <div className="content">
                     <Nav/>
+                    <div className ="intro-text">
+                        <IntroText text="PLATFORM"/>
+                        <IntroText text="CONNECTING YOUNG STARS"/>
+                        <IntroText text="WITH LEADING CLUBS"/>
+                        <Taglinetext className="tagline-bottom" text="Exclusive Connections between right sponsors"/>
+                        <Taglinetext text="and the right Clubs through private auctions"/>
+                    </div>
                 </div>
             </div>
         );

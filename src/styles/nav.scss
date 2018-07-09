@@ -69,6 +69,7 @@
     //    width:30%;
        color:white;
        padding-bottom: 15px;
+       font-size: .9rem;
        @extend %link-fix;
        &:nth-child(2){border-bottom: 4px inset rgba(255, 255, 255, 0.261);} 
     }
@@ -79,7 +80,7 @@
     font-family: 'Lato', sans-serif;
     margin-left:2px; 
     & a{
-        font-size:1.0rem;
+        font-size:1.3rem;
         margin-top:2px; 
     }
 }
