@@ -15,7 +15,7 @@ export default class Nav extends Component {
  render() {
     return (
       <div className="navbar">
-        <BrandName name="Kampe"/>
+        <BrandName name="Kampe" className="brandname"/>
         <MenuList className="menu" />
         <Authorize className="authorize"/>
       </div>
