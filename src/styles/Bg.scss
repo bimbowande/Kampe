@@ -32,17 +32,36 @@
                     background-color: rgba(4, 7, 17, 0.713);
                 }
             }
-            @if $i<3 {
-                border-left:1px solid transparent; 
+            @if($i==2){
+                &:first-child{
+                    //outline:1px inset rgba(255,255,255,.3);
+                }
+                
             }
+           
+            
             flex:.1*$i;
             background-color: rgba(4,7,17,$i*.3);
             position: relative;
+            @if($i<2){
+                outline:1px inset rgba(255,255,255,.3);
+                background-color: rgba(4, 7, 17, 0.613);
+            }
             @if $i==8{
                 background-color: rgba(4, 7, 17, 0.513);
+                outline: none;
             }
             @if $i==9{
                 background-color: rgba(4, 7, 17, 0.613);
+                outline: none;
+
+            }
+            @if($i==6){
+                background-color: rgba(4, 7, 17, 0.713);
+
+            }
+            @if($i==3){
+                background-color: rgba(4, 7, 17, 0.713);
 
             }
             &::before{
@@ -72,7 +91,7 @@
     font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     & h2{
-       margin-left:80px;
+        margin-left:80px;
         font-size:3.7rem;
         color:rgba(255,255,255,.9);
         font-weight: 400;
@@ -91,9 +110,10 @@
     & .sponsor-btn{
         font-family: 'Open Sans Condensed', sans-serif;
         margin-left:80px;
+        font-weight: 500;
         margin-top: 50px;
         padding:10px;
-        font-size: .7rem;
+        font-size: 1.0rem;
         color: white;
         width:180px;
         cursor: pointer;

@@ -10,10 +10,11 @@ class Bg extends Component {
         return (
             <div className="container">
                 <div className="bg-section">
-                    <div className="bg-subsection bg-subsection-1"></div>
                     <div className="bg-subsection bg-subsection-2"></div>
+                    <div className="bg-subsection bg-subsection-1"></div>
                     <div className="bg-subsection bg-subsection-8 "></div>
-                    <div className="bg-subsection bg-subsection-9 "></div>
+                    <div className="bg-subsection bg-subsection-6 "></div>
+                    <div className="bg-subsection bg-subsection-3 "></div>
                     <div className="bg-subsection bg-subsection-2"></div>
                     <div className="bg-subsection bg-subsection-1"></div>
                     
