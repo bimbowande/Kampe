@@ -30,7 +30,9 @@
     }
     & .brandname{
         text-align: left;
+        opacity: 0;
         width: 30%;
+        transition: opacity 2s ease-in 2s;
     }
 }
 
@@ -78,7 +80,7 @@
 //brandName
 .brandname{
     font-family: 'Lato', sans-serif;
-    margin-left:2px; 
+    margin-left: -5px; 
     & a{
         font-size:1.3rem;
         margin-top:2px; 
