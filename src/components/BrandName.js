@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-const BrandName = ({href,name,className}) =>{
+const BrandName = ({href,name,className,elemstyle}) =>{
     return(
-        <div className={className}>
+        <div style={elemstyle} className={className}>
             <a href={href}>{name}</a>
         </div>
     )

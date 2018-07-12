@@ -38,8 +38,6 @@
                 }
                 
             }
-           
-            
             flex:.1*$i;
             background-color: rgba(4,7,17,$i*.3);
             position: relative;
@@ -54,15 +52,12 @@
             @if $i==9{
                 background-color: rgba(4, 7, 17, 0.613);
                 outline: none;
-
             }
             @if($i==6){
-                background-color: rgba(4, 7, 17, 0.713);
-
+                background-color: rgba(4, 7, 17, 0.613);
             }
             @if($i==3){
                 background-color: rgba(4, 7, 17, 0.713);
-
             }
             &::before{
                 position: absolute;
@@ -74,12 +69,7 @@
                 background: #0f0e4b;
             }
         }
-
     }
-}
-
-//content
-.content{
 }
 
 //introductory text
