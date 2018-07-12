@@ -1,10 +1,10 @@
 import React from 'react'
 
-const TextInput = ({}) => {
+const TextInput = ({iconclass,type,inputclass,placeholder}) => {
   return (
     <div>
-      <i></i>
-      <input type={type} className={inputclass} place />
+      <i className={iconclass}></i>
+      <input type={type} className={inputclass} placeholder={placeholder} />
     </div>
   )
 }
