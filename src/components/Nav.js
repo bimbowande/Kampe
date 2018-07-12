@@ -18,12 +18,12 @@ export default class Nav extends Component {
 
     componentDidMount(){ 
        for(let i= 5;i>=0; i--){
-      setTimeout(()=>{
-        this.setState({ animate: true }, () => {
-          console.log(this.state)
-          console.log(i)
-        });
-      },i * 1000)
+          setTimeout(()=>{
+            this.setState({ animate: true }, () => {
+              console.log(this.state)
+              console.log(i)
+            });
+          },i * 1000)
     }
         
   }
