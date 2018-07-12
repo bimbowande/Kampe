@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import TextInput from './TextInput';
 
- const Form = () => {
+ const Form = ({className}) => {
   return (
-    <div>
-      
+    <div className={className}>
+      <TextInput/>
+      <TextInput/>
     </div>
   )
 }
