@@ -37,8 +37,28 @@
             width:40%;
             & .input-group{
                 text-align: center;
-                border:1px solid red;
+                //border:1px solid red;
                 margin: 10px;
+                position: relative;
+                & .input-box{
+                   padding: 7px;
+                   border:1px solid gray;
+                }
+                & i{
+                    position: absolute;
+                    margin: 0;
+                    @include display(flex);
+                    align-items: center;
+                    left:20%;
+                    padding: 10px;
+                    height: 100%;
+                    box-sizing: border-box;
+                    border:1px solid gray;
+                    border-right:none;
+                    & svg{
+                        color:rgba($color: #02041d, $alpha: .7);
+                    }
+                }
             }
         }
         & .form-bg{
@@ -55,7 +75,6 @@
         background-color: rgba(51, 46, 84, 0.579);
         width:100%;
         filter:blur(10px);
-       
     }
 }
 
