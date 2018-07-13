@@ -12,7 +12,7 @@
     }
     & p{
         left:13px;
-        font-size:.5rem;
+        font-size:.7rem;
         color: rgba(134,134,134,.9);
         font-weight: 100;
        
@@ -25,6 +25,7 @@
         color:white;
         background-color: rgba(2, 1, 43, 0.9);
         width:120px;
+        font-size: .7rem;
         border:none;
         padding:10px;
         transition: all 300ms ease-in-out 300ms;
@@ -38,11 +39,21 @@
 .or{
     position: relative;
     top:40px;
+    width:70%;
+    margin: 0 auto;
     display: flex;
     @for $i from 1 through 3{
         .content-#{$i}{
-            width:33.3%;
-            background: red;
+            text-align: center;
+            width:40%;
+            margin: 5px;
+            border-bottom:1px dashed rgba(141, 146, 174, 0.523);
+           @if($i == 2){
+            border: none;
+            width:5%;
+            position: relative;
+            top:5px;
+        }
         }
     }
 }
