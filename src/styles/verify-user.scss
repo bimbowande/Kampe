@@ -14,7 +14,14 @@
         left:13px;
     }
     & button{
-        right:30px;
+        font-family: 'Lato', sans-serif;
+        right:33px;
+        cursor:pointer;
+        box-shadow:2px 2px 2px rgba(134,134,134,.9);
+        color:white;
+        background-color: rgba(2, 1, 43, 0.9);
+        width:120px;
+        border:none;
+        padding:10px;
     }
-    
 }
