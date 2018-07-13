@@ -1,8 +1,8 @@
 import React from 'react'
 
-const TextInput = ({iconclass,type,inputclass,placeholder}) => {
+const TextInput = ({className,iconclass,type,inputclass,placeholder}) => {
   return (
-    <div>
+    <div className={className}>
       <i className={iconclass}></i>
       <input type={type} className={inputclass} placeholder={placeholder} />
     </div>

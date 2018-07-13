@@ -27,15 +27,19 @@
     & .login-section{
         position: relative;
         width:80%;
-        height: 80%;
+        height: 90%;
         margin: 0 auto;
-        top:50px;
+        top:40px;
         @include display(flex);   
         
         & .form-section{
             background-color:white; 
             width:40%;
-            text-align: center;
+            & .input-group{
+                text-align: center;
+                border:1px solid red;
+                margin: 10px;
+            }
         }
         & .form-bg{
             width:60%;
