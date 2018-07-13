@@ -3,6 +3,7 @@ import Nav from './Nav';
 import IntroText from './IntroText';
 import Taglinetext from './Taglinetext';
 import Button from './Button';
+import Login from '../container/Login';
 import '../styles/Bg.scss';
 
 class Bg extends Component {
@@ -30,6 +31,7 @@ class Bg extends Component {
                         <Button name="BECOME AN AGENT" className="sponsor-btn"/>
                     </div>
                 </div>
+               <Login/>
             </div>
         );
     }

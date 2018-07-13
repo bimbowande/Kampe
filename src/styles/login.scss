@@ -1,0 +1,40 @@
+/*
+*  mixins for display
+*/
+@mixin display($display){
+    -moz-display: $display;
+    -webkit-display:$display;
+    -o-display:$display;
+    -ms-display:$display;
+
+}
+
+/*
+* end of mixins
+*/
+.login-section-container{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    & .login-section{
+        border:1px solid red;
+        position: relative;
+        width:80%;
+        height: 80%;
+        margin: 0 auto;
+        top:50px;
+        @include display(flex);   
+    }
+    &::before{
+        position: absolute;
+        height: 100%;
+        top:0;left:0;right:0;bottom:0;
+        content:'';
+        background-color: rgba(51, 46, 84, 0.879);
+        width:100%;
+        filter:blur(50px);
+       
+    }
+}
+

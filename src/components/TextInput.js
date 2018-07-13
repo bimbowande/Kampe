@@ -8,4 +8,5 @@ const TextInput = ({iconclass,type,inputclass,placeholder}) => {
     </div>
   )
 }
-export default TextInput
+
+export default TextInput;

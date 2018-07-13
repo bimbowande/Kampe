@@ -10,4 +10,4 @@ import TextInput from './TextInput';
   )
 }
 
-export default Form
+export default Form;

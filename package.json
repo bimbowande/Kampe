@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "build": "webpack ./src/js/main.js ./dist/bundle.js",
+    "build": "webpack --config webpack.prod.js ./src/js/main.js ./dist/bundle.js",
     "start": "webpack-dev-server --config webpack.dev.js",
     "test": "jest ./test"
   },

@@ -23,8 +23,8 @@ export default class Nav extends Component {
               console.log(this.state)
               console.log(i)
             });
-          },i * 1000)
-    }
+        },i * 1000)
+     }
         
   }
  render() {
