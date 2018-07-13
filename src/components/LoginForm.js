@@ -14,6 +14,11 @@ import '../styles/verify-user.scss'
        <p>Forgot Password?</p>
         <Button name="LOGIN"/>
       </div>
+      <div className='or'>
+        <div className='content-1'></div>
+        <div className='content-2'>or</div>
+        <div className='content-3'></div>
+      </div>
     </div>
   )
 }

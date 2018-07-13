@@ -12,6 +12,10 @@
     }
     & p{
         left:13px;
+        font-size:.5rem;
+        color: rgba(134,134,134,.9);
+        font-weight: 100;
+       
     }
     & button{
         font-family: 'Lato', sans-serif;
@@ -23,5 +27,22 @@
         width:120px;
         border:none;
         padding:10px;
+        transition: all 300ms ease-in-out 300ms;
+        &:hover{
+            background-color: rgba(7, 7, 97, 0.9);
+        }
+    }
+}
+
+//or 
+.or{
+    position: relative;
+    top:40px;
+    display: flex;
+    @for $i from 1 through 3{
+        .content-#{$i}{
+            width:33.3%;
+            background: red;
+        }
     }
 }
