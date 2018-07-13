@@ -19,6 +19,9 @@ import '../styles/verify-user.scss'
         <div className='content-2'>or</div>
         <div className='content-3'></div>
       </div>
+      <div className='social-btn'>
+        <Button className='google-btn' name="LOGIN WITH GOOGLE"/>
+      </div>
     </div>
   )
 }

@@ -48,12 +48,21 @@
             width:40%;
             margin: 5px;
             border-bottom:1px dashed rgba(141, 146, 174, 0.523);
-           @if($i == 2){
-            border: none;
-            width:5%;
-            position: relative;
-            top:5px;
+            @if($i == 2){
+                border: none;
+                width:5%;
+                position: relative;
+            }
         }
-        }
+    }
+}
+
+.social-btn{
+    border:1px solid red;
+    position: relative;
+    top:80px;
+    text-align: center;
+    & .google-btn{
+        width:60%;
     }
 }
