@@ -29,34 +29,38 @@
         width:80%;
         height: 90%;
         margin: 0 auto;
-        top:40px;
+        top:30px;
         @include display(flex);   
         
         & .form-section{
             background-color:white; 
+           
             width:40%;
             & .input-group{
                 text-align: center;
-                //border:1px solid red;
                 margin: 10px;
+                //border:1px solid red;
                 position: relative;
                 & .input-box{
-                   padding: 7px;
-                   border:1px solid gray;
+                   margin-left: 30px;
+                   width:200px;
+                   padding: 15px;
+                   border:1px solid rgba(0,0,0,.1);
                 }
                 & i{
                     position: absolute;
                     margin: 0;
                     @include display(flex);
                     align-items: center;
-                    left:20%;
+                    left:15.5%;
                     padding: 10px;
                     height: 100%;
                     box-sizing: border-box;
-                    border:1px solid gray;
+                    border:1px solid rgba(0,0,0,.1);
                     border-right:none;
                     & svg{
-                        color:rgba($color: #02041d, $alpha: .7);
+                        color:rgba($color: #04072b, $alpha: .7);
+                        padding:5px;
                     }
                 }
             }
@@ -78,3 +82,14 @@
     }
 }
 
+
+//brand-name
+.form-brandname{
+    font-size:1.3rem;
+    color: #04072b;
+    font-weight: 600;
+    margin-top:100px;
+    display: inline-block;
+    margin-left:90px;
+    margin-bottom:50px; 
+}

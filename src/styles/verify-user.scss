@@ -1,0 +1,20 @@
+.verify-user{
+    display: flex;
+    padding:10px;
+    align-content: center;
+    width:70%;
+    margin: 0 auto;
+    position:relative;
+    
+    & p,button{
+        padding: 5px;
+        position: absolute;
+    }
+    & p{
+        left:13px;
+    }
+    & button{
+        right:30px;
+    }
+    
+}

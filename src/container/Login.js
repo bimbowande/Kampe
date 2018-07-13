@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from '../components/Form';
+import LoginForm from '../components/LoginForm';
 import '../styles/login.scss';
 
 
@@ -8,7 +8,7 @@ export default class Login extends Component {
     return (
       <div className='login-section-container'>
           <div className='login-section'> 
-            <Form className='form-section'/>
+            <LoginForm className='form-section'/>
             <div className='form-bg'></div>
           </div>
       </div>
