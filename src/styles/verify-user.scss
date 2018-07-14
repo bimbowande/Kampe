@@ -1,0 +1,114 @@
+.verify-user{
+    display: flex;
+    padding:10px;
+    align-content: center;
+    width:70%;
+    margin: 0 auto;
+    position:relative;
+    
+    & p,button{
+        padding: 5px;
+        position: absolute;
+    }
+    & p{
+        left:13px;
+        font-size:.7rem;
+        color: rgba(134,134,134,.9);
+        font-weight: 100;
+       
+    }
+    & button{
+        font-family: 'Lato', sans-serif;
+        right:33px;
+        cursor:pointer;
+        box-shadow:2px 2px 2px rgba(134,134,134,.9);
+        color:white;
+        background-color: rgba(2, 1, 43, 0.9);
+        width:120px;
+        font-size: .7rem;
+        border:none;
+        padding:10px;
+        transition: all 300ms ease-in-out 300ms;
+        &:hover{
+            background-color: rgba(7, 7, 97, 0.9);
+        }
+    }
+}
+
+//or 
+.or{
+    position: relative;
+    top:40px;
+    left:5px;
+    width:69%;
+    margin: 0 auto;
+    display: flex;
+    @for $i from 1 through 3{
+        .content-#{$i}{
+            text-align: center;
+            width:40%;
+            margin:4px;
+            border-bottom:1px dashed rgba(141, 146, 174, 0.523);
+            @if($i==2){
+                border: none;
+                top:5px;
+                width:5%;
+                position: relative;
+            }
+        }
+    }
+}
+
+.social-btn{
+    position: relative;
+    top:80px;
+    display: inline-block;
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    & i, .google-btn{
+        color: white;
+    }
+    & i{
+        padding: 11.5px;
+        position: relative;
+        top:1px;
+        width: 20px;
+        background-color: rgba(2, 1, 43, 0.9);
+        box-sizing: padding-box;
+        height: 100%;
+    }
+    & .google-btn{
+        font-family: 'Lato', sans-serif;
+        box-sizing: padding-box;
+        border:none;
+        font-size: .7rem;
+        font-weight:100; 
+        color:white;
+        word-spacing: 2px;
+        text-align: center;
+        cursor:pointer;
+        background-color: rgba(2, 1, 43, 0.8);
+        width:53%;
+        transition: all 200ms ease-in 200ms;
+        padding: 12px;
+        &:hover{
+            background-color: rgba(2, 1, 43, 0.76);
+        }
+    }
+}
+
+.create{
+    position: relative;
+    top:120px;
+    left:-5px;
+    width:62%;
+    margin: 0 auto; 
+    text-align: left;
+    padding: 2px;
+    font-size: .8rem;
+    color: rgba(2, 1, 43, 0.8);
+    & p{
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,114 @@
+/*
+*  mixins for display
+*/
+@mixin display($display){
+    display:$display;
+    -moz-display: $display;
+    -webkit-display:$display;
+    -o-display:$display;
+    -ms-display:$display;
+
+}
+@mixin background($bgname,$color){
+    background:url(#{$bgname}),$color;
+    background-size:cover; 
+    background-position:center;  
+}
+
+
+/*
+* end of mixins
+*/
+.login-section-container{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    & .login-section{
+        position: relative;
+        width:80%;
+        height: 90%;
+        margin: 0 auto;
+        top:30px;
+        @include display(flex);   
+        
+        & .form-section{
+            background-color:white; 
+           
+            width:40%;
+            & .input-group{
+                text-align: center;
+                margin: 10px;
+                //border:1px solid red;
+                position: relative;
+                & .input-box{
+                   margin-left: 30px;
+                   width:200px;
+                   padding: 15px;
+                   border:1px solid rgba(0,0,0,.1);
+                }
+                & i{
+                    position: absolute;
+                    margin: 0;
+                    @include display(flex);
+                    align-items: center;
+                    left:15.5%;
+                    padding: 10px;
+                    height: 100%;
+                    box-sizing: border-box;
+                    border:1px solid rgba(0,0,0,.1);
+                    border-right:none;
+                    & svg{
+                        color:rgba($color: #04072b, $alpha: .7);
+                        padding:5px;
+                    }
+                }
+            }
+        }
+        & .form-bg{
+            width:60%;
+            position: relative;
+            @include background('../images/football-2518982_1920.jpg',rgb(32, 13, 100));
+           background-blend-mode: exclusion;
+           & span{
+               & .fa{
+                   position: absolute;
+                   font-size: 20px;
+                   color:white;
+                   padding: 10px;
+                   cursor: pointer;
+                   right:-15px;
+                   top:-15px;
+                   background-color:rgba($color: #04072b, $alpha: .7);
+                   transition: all 100ms ease-in-out 10ms;
+                   &:hover{
+                       transform:scale(1.2);
+                       background-color:rgba($color: #04072b, $alpha: .9);
+
+                   }
+               }
+           }
+        }
+    }
+    &::before{
+        position: absolute;
+        height: 100%;
+        top:0;left:0;right:0;bottom:0;
+        content:'';
+        background-color: rgba(17, 8, 79, .978);
+        width:100%;
+        filter:blur(40px);
+    }
+}
+
+
+//brand-name
+.form-brandname{
+    font-size:1.3rem;
+    color: #04072b;
+    font-weight: 600;
+    margin-top:100px;
+    display: inline-block;
+    margin-left:75px;
+    margin-bottom:50px; 
+}
