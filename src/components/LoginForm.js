@@ -2,6 +2,7 @@ import React from 'react';
 import TextInput from './TextInput';
 import BrandName from './BrandName';
 import Button from './Button';
+import SocialBtn from './SocialBtn';
 import '../styles/verify-user.scss'
 
  const LoginForm = ({className}) => {
@@ -19,9 +20,10 @@ import '../styles/verify-user.scss'
         <div className='content-2'>or</div>
         <div className='content-3'></div>
       </div>
-      <div className='social-btn'>
-        <Button className='google-btn' name="LOGIN WITH GOOGLE"/>
-      </div>
+      <SocialBtn className='social-btn' name='LOGIN WITH GOOGLE' btnClassName='google-btn' iconName='fab fa-google'/>
+      <div className='create'>
+        <p><a>Create an account</a></p>
+      </div> 
     </div>
   )
 }

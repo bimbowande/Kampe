@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
- const SocialBtn = ({iconName,btnname,name}) => {
+ const SocialBtn = ({className,iconName,btnClassName,name}) => {
   return (
-    <div>
+    <div className={className}>
       <i className={iconName}></i>
-      <button className={btnname}>{name}</button>
+      <button className={btnClassName}>{name}</button>
     </div>
   )
 }

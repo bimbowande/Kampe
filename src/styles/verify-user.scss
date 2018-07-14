@@ -39,17 +39,19 @@
 .or{
     position: relative;
     top:40px;
-    width:70%;
+    left:5px;
+    width:69%;
     margin: 0 auto;
     display: flex;
     @for $i from 1 through 3{
         .content-#{$i}{
             text-align: center;
             width:40%;
-            margin: 5px;
+            margin:4px;
             border-bottom:1px dashed rgba(141, 146, 174, 0.523);
-            @if($i == 2){
+            @if($i==2){
                 border: none;
+                top:5px;
                 width:5%;
                 position: relative;
             }
@@ -58,11 +60,55 @@
 }
 
 .social-btn{
-    border:1px solid red;
     position: relative;
     top:80px;
+    display: inline-block;
+    width:100%;
+    margin: 0 auto;
     text-align: center;
+    & i, .google-btn{
+        color: white;
+    }
+    & i{
+        padding: 11.5px;
+        position: relative;
+        top:1px;
+        width: 20px;
+        background-color: rgba(2, 1, 43, 0.9);
+        box-sizing: padding-box;
+        height: 100%;
+    }
     & .google-btn{
-        width:60%;
+        font-family: 'Lato', sans-serif;
+        box-sizing: padding-box;
+        border:none;
+        font-size: .7rem;
+        font-weight:100; 
+        color:white;
+        word-spacing: 2px;
+        text-align: center;
+        cursor:pointer;
+        background-color: rgba(2, 1, 43, 0.8);
+        width:53%;
+        transition: all 200ms ease-in 200ms;
+        padding: 12px;
+        &:hover{
+            background-color: rgba(2, 1, 43, 0.76);
+        }
+    }
+}
+
+.create{
+    position: relative;
+    top:120px;
+    left:-5px;
+    width:62%;
+    margin: 0 auto; 
+    text-align: left;
+    padding: 2px;
+    font-size: .8rem;
+    color: rgba(2, 1, 43, 0.8);
+    & p{
+        cursor: pointer;
     }
 }
