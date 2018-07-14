@@ -9,7 +9,9 @@ export default class Login extends Component {
       <div className='login-section-container'>
           <div className='login-section'> 
             <LoginForm className='form-section'/>
-            <div className='form-bg'></div>
+            <div className='form-bg'>
+              <span><i className='fa fas fa-times'></i></span>
+            </div>
           </div>
       </div>
     )

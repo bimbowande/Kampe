@@ -22,7 +22,7 @@ import '../styles/verify-user.scss'
       </div>
       <SocialBtn className='social-btn' name='LOGIN WITH GOOGLE' btnClassName='google-btn' iconName='fab fa-google'/>
       <div className='create'>
-        <p><a>Create an account</a></p>
+        <p><a>Dont have an account? create</a></p>
       </div> 
     </div>
   )

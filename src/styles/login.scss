@@ -67,8 +67,27 @@
         }
         & .form-bg{
             width:60%;
+            position: relative;
             @include background('../images/football-2518982_1920.jpg',rgb(32, 13, 100));
            background-blend-mode: exclusion;
+           & span{
+               & .fa{
+                   position: absolute;
+                   font-size: 20px;
+                   color:white;
+                   padding: 10px;
+                   cursor: pointer;
+                   right:-15px;
+                   top:-15px;
+                   background-color:rgba($color: #04072b, $alpha: .7);
+                   transition: all 100ms ease-in-out 10ms;
+                   &:hover{
+                       transform:scale(1.2);
+                       background-color:rgba($color: #04072b, $alpha: .9);
+
+                   }
+               }
+           }
         }
     }
     &::before{
@@ -76,9 +95,9 @@
         height: 100%;
         top:0;left:0;right:0;bottom:0;
         content:'';
-        background-color: rgba(51, 46, 84, 0.579);
+        background-color: rgba(17, 8, 79, .978);
         width:100%;
-        filter:blur(10px);
+        filter:blur(40px);
     }
 }
 
