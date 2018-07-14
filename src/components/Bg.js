@@ -17,8 +17,7 @@ class Bg extends Component {
                     <div className="bg-subsection bg-subsection-6 "></div>
                     <div className="bg-subsection bg-subsection-3 "></div>
                     <div className="bg-subsection bg-subsection-2"></div>
-                    <div className="bg-subsection bg-subsection-1"></div>
-                    
+                    <div className="bg-subsection bg-subsection-1"></div> 
                 </div>
                 <div className="content">
                     <Nav/>
@@ -31,7 +30,7 @@ class Bg extends Component {
                         <Button name="BECOME AN AGENT" className="sponsor-btn"/>
                     </div>
                 </div>
-               <Login/>
+              <Login/>
             </div>
         );
     }
